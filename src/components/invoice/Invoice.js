@@ -50,8 +50,7 @@ const Invoice = ({ data, printRef, globalSetting, currency }) => {
               </Link>
             </h2>
             <p className="text-sm text-gray-500">
-              {globalSetting?.address ||
-                "Cecilia Chapman, 561-4535 Nulla LA, <br /> United States 96522"}
+              {"B-65, Anmol Vatika Jabalpur, Madhya Pradesh, India."}
             </p>
           </div>
         </div>
