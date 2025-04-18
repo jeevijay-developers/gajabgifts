@@ -18,8 +18,8 @@ module.exports = {
         header: "560px",
       },
       colors: {
-        customPink: "#2C3335",
-        customPinkDark: "#333945",
+        customPink: "#f54257",
+        customPinkDark: "#bf192c",
       },
       backgroundImage: {
         "page-header": "url('/page-header-bg.jpg')",
