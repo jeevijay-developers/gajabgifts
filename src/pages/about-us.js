@@ -107,7 +107,7 @@ const AboutUs = () => {
               </div>
             </div>
 
-            <div className="mt-10 lg:mt-0">
+            <div className="mt-10 lg:mt-0 rounded-lg overflow-hidden shadow-sm">
               <img
                 width={920}
                 height={750}
@@ -116,7 +116,6 @@ const AboutUs = () => {
                   "/about-us.jpg"
                 }
                 alt="logo"
-                className=""
               />
             </div>
           </div>

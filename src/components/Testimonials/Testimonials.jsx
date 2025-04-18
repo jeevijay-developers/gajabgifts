@@ -10,33 +10,33 @@ const testimonials = [
   {
     name: "Abhishek Yadav",
     img: "/people/1.jpg",
-    text: "The cotton shirts from O'Century are perfect for everyday wear—lightweight, breathable, and they look sharp without being too formal.",
+    text: "Ordered a custom photo mug for my sister’s birthday—it turned out amazing! The print quality was sharp and the delivery was quick. She loved it!",
   },
   {
     name: "Vishal",
     img: "/people/2.jpg",
-    text: "I’ve been living in their cotton trousers lately. Super comfortable for work-from-home and still look polished enough for stepping out.",
+    text: "I gifted my friend a personalized cushion with our college photo on it. The fabric was super soft and the print looked really vibrant. Totally recommend it!",
   },
   {
     name: "Ajit Singh",
     img: "/people/3.jpg",
-    text: "It’s hard to find clothes that fit well and feel good in this weather, but O'Century nailed it. Their cotton fabric is top-notch.",
+    text: "Got a customized T-shirt with my dog's face on it—it's my new favorite tee! Great fabric quality and the print hasn’t faded even after multiple washes.",
   },
   {
     name: "Keshav Kumar",
     img: "/people/4.jpg",
-    text: "I appreciate brands that focus on fabric quality, and O'Century definitely delivers. The shirt feels premium and still breathable in the heat.",
+    text: "I was skeptical about how the photo would look on a magic mug, but it came out beautifully! The heat-reveal effect is super fun and everyone at work was impressed.",
   },
   {
     name: "Lakshay Saxena",
     img: "/people/5.jpg",
-    text: "Subtle, stylish, and super soft—my new O'Century kurta is easily the best one in my wardrobe. Great for both casual and festive wear.",
+    text: "Bought a custom photo frame for my parents’ anniversary and they absolutely adored it. The finish was elegant and the quality exceeded expectations.",
   },
   {
-    name: "George ",
+    name: "George",
     img: "/people/6.jpg",
-    text: "Bought a pair of O'Century cotton trousers and they’ve easily become my everyday favorite. The fit is clean, the fabric feels light and airy, and they’re versatile enough for both work and weekend wear. You can genuinely feel the quality.",
-  },
+    text: "I keep coming back to this store for gifting. The keychains, mugs, frames—everything is customizable and well-made. Great service and packaging too!",
+  }  
 ];
 
 const Testimonials = () => {
