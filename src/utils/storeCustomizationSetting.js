@@ -875,7 +875,7 @@ export const storeCustomization = {
     meta_img:
       "https://res.cloudinary.com/ahossain/image/upload/v1636729752/facebook-page_j7alju.png",
     meta_keywords: "e-commerce, online store",
-    meta_title: "ocentury  ",
+    meta_title: "gajabgifts  ",
     meta_url: "https://ocentury.in/",
   },
 };
