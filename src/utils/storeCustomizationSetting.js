@@ -777,25 +777,25 @@ export const storeCustomization = {
       de: "Neueste Nachrichten",
     },
     block2_sub_title1: {
-      en: "Fish & Meat",
+      en: "Mugs & Cups",
       de: "Fisch Fleisch",
     },
-    block2_sub_link1: "/search?category=fish-meat",
+    block2_sub_link1: "/search?category=mug-cup",
     block2_sub_title2: {
-      en: "Soft Drink",
+      en: "Keychains & Bracelets",
       de: "Erfrischungsgetränk",
     },
-    block2_sub_link2: "/search?category=drinks",
+    block2_sub_link2: "/search?category=keychain",
     block2_sub_title3: {
-      en: "Milk & Dairy",
+      en: "Cushion & Pillow",
       de: "Milch und Milchprodukte",
     },
-    block2_sub_link3: "/search?category=milk-dairy",
+    block2_sub_link3: "/search?category=cusion",
     block2_sub_title4: {
-      en: "Beauty & Health",
+      en: "Photos Frames",
       de: "Schönheit und Gesundheit",
     },
-    block2_sub_link4: "/search?category=beauty-health",
+    block2_sub_link4: "/search?category=photo-frame",
     block3_title: {
       en: "My Account",
       de: "Mein Konto",

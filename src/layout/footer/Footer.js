@@ -441,9 +441,9 @@ const Footer = () => {
             href="https://themeforest.net/user/htmllover"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-customPink"
+            className="text-gray-500 "
           >
-            ocentury
+            gajabgifts
           </Link>
           , All rights reserved.
         </p>
