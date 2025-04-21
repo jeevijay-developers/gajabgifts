@@ -12,7 +12,6 @@ import CategoryServices from "@services/CategoryServices";
 import CategoryCard from "@components/category/CategoryCard";
 import useUtilsFunction from "@hooks/useUtilsFunction";
 import { getUserSession } from "@lib/auth";
-import { toast } from "react-toastify";
 import { useRouter } from "next/router";
 
 const Category = () => {

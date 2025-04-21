@@ -9,7 +9,7 @@ const PageHeader = ({ title, headerBg }) => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
       }}
-      className={`flex justify-center py-10 lg:py-80 bg-indigo-100 w-full`}
+      className={`flex justify-center py-20 lg:py-80 bg-indigo-100 w-full`}
     >
       <div className="flex mx-auto w-full max-w-screen-2xl px-3 sm:px-10">
         <div className="w-full flex justify-center flex-col relative">
