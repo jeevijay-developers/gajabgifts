@@ -9,6 +9,7 @@ import {
   TwitterIcon,
   WhatsappIcon,
 } from "react-share";
+import { FaSquareInstagram } from "react-icons/fa6";
 
 //internal import
 import { getUserSession } from "@lib/auth";
@@ -333,7 +334,7 @@ const Footer = () => {
                     {storeCustomizationSetting?.footer?.social_facebook && (
                       <li className="flex items-center mr-3 transition ease-in-out duration-500">
                         <Link
-                          href={`${storeCustomizationSetting?.footer?.social_facebook}`}
+                          href={"https://www.facebook.com/share/159mbaNXRC/"}
                           aria-label="Social Link"
                           rel="noreferrer"
                           target="_blank"
@@ -343,7 +344,7 @@ const Footer = () => {
                         </Link>
                       </li>
                     )}
-                    {storeCustomizationSetting?.footer?.social_twitter && (
+                    {/* {storeCustomizationSetting?.footer?.social_twitter && (
                       <li className="flex items-center  mr-3 transition ease-in-out duration-500">
                         <Link
                           href={`${storeCustomizationSetting?.footer?.social_twitter}`}
@@ -394,7 +395,18 @@ const Footer = () => {
                           <WhatsappIcon size={34} round />
                         </Link>
                       </li>
-                    )}
+                    )} */}
+                    <li className="flex items-center mr-3 transition ease-in-out duration-500 rounded-full">
+                      <Link
+                        href="https://www.instagram.com/thegazabgifts/"
+                        aria-label="Social Link"
+                        rel="noreferrer"
+                        target="_blank"
+                        className="block text-center mx-auto text-red-600 rounded-full"
+                      >
+                        <FaSquareInstagram size={34} />
+                      </Link>
+                    </li>
                   </ul>
                 </div>
               )}
