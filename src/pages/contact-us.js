@@ -14,26 +14,31 @@ import InputArea from "@components/form/InputArea";
 import PageHeader from "@components/header/PageHeader";
 import CMSkeleton from "@components/preloader/CMSkeleton";
 import useUtilsFunction from "@hooks/useUtilsFunction";
-
+const WEB3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
 
 const ContactUs = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  
+
   const { t } = useTranslation();
-  const { register, handleSubmit, formState: { errors }, reset} = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
   const { showingTranslateValue } = useUtilsFunction();
   const { storeCustomizationSetting, loading, error } = useGetSetting();
 
   const submitHandler = async (data) => {
     setIsSubmitting(true);
     const formData = {
-      access_key: "93d67399-7852-4437-b553-73042a7abb7c", // Replace this with your actual Web3Forms key
+      access_key: WEB3FORMS_ACCESS_KEY,
       name: data.name,
       email: data.email,
       subject: data.subject,
       message: data.message,
     };
-  
+
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -42,7 +47,7 @@ const ContactUs = () => {
         },
         body: JSON.stringify(formData),
       });
-  
+
       const result = await res.json();
       if (result.success) {
         reset();
@@ -52,11 +57,10 @@ const ContactUs = () => {
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-    }finally{
+    } finally {
       setIsSubmitting(false);
     }
   };
-  
 
   return (
     <Layout title="Contact Us" description="This is contact us page">
@@ -80,18 +84,18 @@ const ContactUs = () => {
               />
             ) : (
               <div className="border p-10 rounded-lg text-center">
-                <span className="flex justify-center text-4xl text-gray-600 mb-4">
+                <span className="flex justify-center text-4xl text-gray-400 mb-4">
                   <FiMail />
                 </span>
-                <h5 className="text-xl mb-2 font-bold text-gray-600">
+                <h5 className="text-xl mb-2 font-bold text-gray-500">
                   {showingTranslateValue(
                     storeCustomizationSetting?.contact_us?.email_box_title
                   )}
                 </h5>
-                <p className="mb-0 text-base opacity-90 leading-7 text-gray-600">
+                <p className="mb-0 text-base opacity-90 leading-7 text-gray-500">
                   <a
                     href={`mailto:${storeCustomizationSetting?.contact_us?.email_box_email}`}
-                    className="text-gray-600"
+                    className="text-gray-500"
                   >
                     {showingTranslateValue(
                       storeCustomizationSetting?.contact_us?.email_box_email
@@ -113,18 +117,18 @@ const ContactUs = () => {
               />
             ) : (
               <div className="border p-10 rounded-lg text-center">
-                <span className="flex justify-center text-4xl text-gray-600 mb-4">
+                <span className="flex justify-center text-4xl text-gray-400 mb-4">
                   <FiBell />
                 </span>
-                <h5 className="text-xl mb-2 font-bold text-gray-600">
+                <h5 className="text-xl mb-2 font-bold text-gray-500">
                   {showingTranslateValue(
                     storeCustomizationSetting?.contact_us?.call_box_title
                   )}
                 </h5>
-                <p className="mb-0 text-base opacity-90 leading-7 text-gray-600">
+                <p className="mb-0 text-base opacity-90 leading-7 ">
                   <a
                     href={`mailto:${storeCustomizationSetting?.contact_us?.call_box_phone}`}
-                    className="text-gray-600"
+                    className="text-gray-500"
                   >
                     {showingTranslateValue(
                       storeCustomizationSetting?.contact_us?.call_box_phone
@@ -144,8 +148,8 @@ const ContactUs = () => {
                 loading={loading}
               />
             ) : (
-              <div className="border p-10 rounded-lg text-center text-gray-600">
-                <span className="flex justify-center text-4xl text-gray-600 mb-4">
+              <div className="border p-10 rounded-lg text-center text-gray-500">
+                <span className="flex justify-center text-4xl text-gray-400 mb-4">
                   <FiMapPin />
                 </span>
                 <h5 className="text-xl mb-2 font-bold">
@@ -278,7 +282,9 @@ const ContactUs = () => {
                       data-variant="flat"
                       className="md:text-sm leading-4 inline-flex items-center cursor-pointer transition ease-in-out duration-300 font-semibold text-center justify-center border-0 border-transparent rounded-md placeholder-white focus-visible:outline-none focus:outline-none bg-emerald-500 text-white px-5 md:px-6 lg:px-8 py-3 md:py-3.5 lg:py-3 hover:text-white hover:bg-emerald-600 h-12 mt-1 text-sm lg:text-base w-full sm:w-auto"
                     >
-                      {isSubmitting ? "Sending..." : t("common:contact-page-form-send-btn")}
+                      {isSubmitting
+                        ? "Sending..."
+                        : t("common:contact-page-form-send-btn")}
                     </button>
                   </div>
                 </div>
