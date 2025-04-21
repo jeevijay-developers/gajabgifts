@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-6'>
                 {/* Card 1 */}
                 <div data-aos="fade-up" className='flex flex-col'>
-                    <h2 className='flex gap-4 items-center text-xl sm:text-2xl md:text-[2rem] text-gray-900'>
+                    <h2 className='flex gap-4 items-center text-xl sm:text-[1.25rem] md:text-[1.5rem] lg:text-[2rem] text-gray-900'>
                         <TbTruckDelivery /> Free Shipping
                     </h2>
                     <p className='text-base sm:text-lg text-gray-600 sm:ml-14'>
@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
 
                 {/* Card 2 */}
                 <div data-aos="fade-up" className='flex flex-col'>
-                    <h2 className='flex gap-4 items-center text-xl sm:text-2xl md:text-[2rem] text-gray-900'>
+                    <h2 className='flex gap-4 items-center text-xl sm:text-[1.25rem] md:text-[1.5rem] lg:text-[2rem] text-gray-900'>
                         <MdKeyboardReturn /> Easy Returns
                     </h2>
                     <p className='text-base sm:text-lg text-gray-600 sm:ml-14'>
@@ -36,7 +36,7 @@ const WhyChooseUs = () => {
 
                 {/* Card 3 */}
                 <div data-aos="fade-up" className='flex flex-col'>
-                    <h2 className='flex gap-4 items-center text-xl sm:text-2xl md:text-[2rem] text-gray-900'>
+                    <h2 className='flex gap-4 items-center text-xl sm:text-[1.25rem] md:text-[1.5rem] lg:text-[2rem] text-gray-900'>
                         <RiCustomerServiceLine /> 24/7 Support
                     </h2>
                     <p className='text-base sm:text-lg text-gray-600 sm:ml-14'>
@@ -46,7 +46,7 @@ const WhyChooseUs = () => {
 
                 {/* Card 4 */}
                 <div data-aos="fade-up" className='flex flex-col'>
-                    <h2 className='flex gap-4 items-center text-xl sm:text-2xl md:text-[2rem] text-gray-900'>
+                    <h2 className='flex gap-4 items-center text-xl sm:text-[1.25rem] md:text-[1.5rem] lg:text-[2rem] text-gray-900'>
                         <RiSecurePaymentLine /> Secure Payment
                     </h2>
                     <p className='text-base sm:text-lg text-gray-600 sm:ml-14'>
@@ -56,7 +56,7 @@ const WhyChooseUs = () => {
 
                 {/* Card 5 */}
                 <div data-aos="fade-up" className='flex flex-col'>
-                    <h2 className='flex gap-4 items-center text-xl sm:text-2xl md:text-[2rem] text-gray-900'>
+                    <h2 className='flex gap-4 items-center text-xl sm:text-[1.25rem] md:text-[1.5rem] lg:text-[2rem] text-gray-900'>
                         <BiPackage /> Quality Products
                     </h2>
                     <p className='text-base sm:text-lg text-gray-600 sm:ml-14'>
@@ -66,7 +66,7 @@ const WhyChooseUs = () => {
 
                 {/* Card 6 */}
                 <div data-aos="fade-up" className='flex flex-col'>
-                    <h2 className='flex gap-4 items-center text-xl sm:text-2xl md:text-[2rem] text-gray-900'>
+                    <h2 className='flex gap-4 items-center text-xl sm:text-[1.25rem] md:text-[1.5rem] lg:text-[2rem] text-gray-900'>
                         <AiOutlineTag /> Best Prices
                     </h2>
                     <p className='text-base sm:text-lg text-gray-600 sm:ml-14'>

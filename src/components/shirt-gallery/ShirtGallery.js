@@ -9,7 +9,7 @@ const ShirtGallery = () => {
         <p className="text-gray-500 text-lg sm:text-xl mb-2">
           Give the gift that gives comfort
         </p>
-        <h2 className=" font-[lora] text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] text-center lg:text-start my-7">
+        <h2 className=" font-[lora] text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] text-center md:text-start lg:text-start my-7">
           Amazing gifts
         </h2>
         <p className="text-gray-700 text-lg sm:text-[22px] mb-6">
