@@ -34,7 +34,7 @@ const MyAccount = () => {
             <div className="flex items-center border border-gray-200 w-full rounded-lg p-4 relative">
               <Link
                 href="/user/update-profile"
-                className="absolute top-2 right-2 bg-cyan-600 text-white px-3 py-1 rounded hover:bg-cyan-700"
+                className="absolute bottom-2 right-2 bg-cyan-600 text-white px-3 py-1 rounded hover:bg-cyan-700"
               >
                 Edit
               </Link>
@@ -48,7 +48,7 @@ const MyAccount = () => {
                     alt={userInfo?.name[0]}
                   />
                 ) : (
-                  <div className="flex items-center justify-center h-16 w-16 rounded-full bg-gray-200 text-xl font-bold text-center mr-4">
+                  <div className="flex items-center justify-center h-16 w-16 rounded-full bg-gray-200 text-xl font-bold text-center">
                     {userInfo?.name?.charAt(0)}
                   </div>
                 )}
@@ -69,7 +69,7 @@ const MyAccount = () => {
               <div className="flex items-center border border-gray-200 w-full rounded-lg p-4 relative">
                 <Link
                   href={`/user/add-shipping-address?id=${userInfo?.id}`}
-                  className="absolute top-2 right-2 bg-cyan-600 text-white px-3 py-1 rounded hover:bg-cyan-700"
+                  className="absolute bottom-2 right-2 bg-cyan-600 text-white px-3 py-1 rounded hover:bg-cyan-700"
                 >
                   Edit
                 </Link>

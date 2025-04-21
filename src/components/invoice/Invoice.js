@@ -40,7 +40,7 @@ const Invoice = ({ data, printRef, globalSetting, currency }) => {
           </div>
           <div className="lg:text-right text-left">
             <h2 className="text-lg font-serif font-semibold mt-4 lg:mt-0 md:mt-0">
-              <Link href="/">
+              <Link href="/" className="flex justify-end mb-3">
                 <Image
                   width={110}
                   height={40}
