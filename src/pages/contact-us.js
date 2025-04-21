@@ -199,7 +199,7 @@ const ContactUs = () => {
                 className="w-full mx-auto flex flex-col justify-center"
               >
                 <div className="mb-12">
-                  <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold font-serif mb-3">
+                  <h3 className="font-[lora] text-flex justify-center py-10 lg:py-80 bg-indigo-100 w-fullxl md:text-2xl lg:text-3xl font-semibold mb-3">
                     <CMSkeleton
                       count={1}
                       height={50}
