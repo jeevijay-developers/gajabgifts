@@ -291,7 +291,7 @@ const InvoiceForDownload = ({
                 <Image
                   src="/logo/logo.png"
                   alt="Invoice"
-                  style={{ width: 80, textAlign: "right" }}
+                  style={{ width: 100, height: 40, textAlign: "right" }}
                 />
               </Text>
               <Text style={styles.topAddress}>
